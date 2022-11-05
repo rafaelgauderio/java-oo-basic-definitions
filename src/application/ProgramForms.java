@@ -6,6 +6,9 @@ public class ProgramForms {
 	
 	public static void main (String [] args ) {
 		
+		System.out.println("Os cálculos não deveriam aparecer aqui na classe principal, deveriam ser delegadas a uma classe "
+				+ "auxiliar devido ao princípio da delegação ");
+		
 		double radius = 2.00;
 		double circumference = calculaCircuferencia(radius);
 		double volume = calculaVolume(radius);
