@@ -6,8 +6,13 @@ public class Product {
 	private double price;
 	private int quantity;
 	
+	/*
 	public Product () {
 		
+	}
+	*/
+	public Product (String name) {
+		this.name = name;
 	}
 
 	public Product(String name, double price, int quantity) {
@@ -55,8 +60,13 @@ public class Product {
 
 	@Override
 	public String toString() {
-		return "Products [name=" + name + ", price=" + String.format("%.2f", price) + ", quantity=" + quantity + ", quantity in stock: "
-				+ String.format("%.2f",this.totalValue()) +"]";
+		return 
+				"Products [name=" + name 
+				+ ", price=" + String.format("%.2f", price) 
+				+ ", quantity=" + quantity 
+				+ ", quantity in stock: "
+				+ String.format("%.2f",this.totalValue()) 
+				+"]";
 	}
 	
 	

@@ -25,8 +25,8 @@ public class ProgramProdutct {
 		p1.removeProducts(20);
 		System.out.println(p1.toString());
 		
-		Product p2 = new Product();
-		p2.setName("Notebook");
+		Product p2 = new Product("Notebook");
+		//p2.setName("Notebook");
 		p2.setPrice(1900.25);
 		p2.setQuantity(500);
 		
@@ -36,6 +36,8 @@ public class ProgramProdutct {
 		System.out.println("You have inform " + quantity + ", printing update Product data: ");
 		p2.addProducts(quantity);
 		System.out.println(p2.toString());
+		
+		sc.close();
 		
 		
 		
