@@ -45,11 +45,20 @@ public class Triangle {
 		double p = this.a +this.b + this.c;
 		return Math.sqrt(p*(p-this.a) * (p - this.b) * (p-this.c));
 	}
+	
+	public static String compareSize (Triangle t1, Triangle t2) {
+		if(t1.areaTrianglo() > t2.areaTrianglo()) {
+			return "A triângulo 1 têm área maior";  
+		} else {
+			return "A triângulo 2 têm área maior"; 
+		}
+	}
 
 	@Override
 	public String toString() {
 		return "Triangle [sideA =" + String.format("%.2f",a) + ", sideB =" + String.format("%.2f",c) + ", sideC =" + String.format("%.2f",b) + ", Triangle Area: " + String.format("%.2f", this.areaTrianglo()) + "]";
 	}
+	
 	
 	
 	

@@ -11,7 +11,9 @@ public class Program {
 				+ "\nMemória Heap\n"
 				+ "Área onde fica a alocação dinâmica de memória. Ali ficam os objectos dinâmicos.\n"
 				+ "A variável tri abaixo, por exemplo, armazena o endereço de memória da variável\n"
-				+ "do tipo triangulo instanciada na memória heap.\n");
+				+ "do tipo triangulo instanciada na memória heap.\n"
+				+ "Classe: é a definicação de tipo, no exemplo um triangulo\n"
+				+ "Objetos são instâncias da classe. No caso abaixo o triângulo (variável composta) de nome tri\n");
 		
 		//variáveis estáticas
 		double x =1.17;
@@ -31,6 +33,9 @@ public class Program {
 		System.out.println(triangulo1);
 		System.out.println(triangulo2);
 		System.out.println(tri);
+		
+		System.out.println("\nMétodos estáticos não precisam ser instânciados\n");
+		System.out.println(Triangle.compareSize(triangulo1, triangulo2));
 	}
 
 }
