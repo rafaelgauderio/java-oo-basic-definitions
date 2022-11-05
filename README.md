@@ -1,1 +1,1 @@
-# java definicoes básicas de oo com uma classe de um formas geométricas e um classe Product 
+# java definicoes básicas de oo utilizando uma classe de formas geométricas e uma classe Product 
