@@ -1,1 +1,1 @@
-"# java defini‡äes basicas de oo com uma classe de um triƒngulo" 
+# java definicoes bÃ¡sicas de oo com uma classe de um triÃ¢ngulo 
