@@ -11,6 +11,8 @@ public class Product {
 		
 	}
 	*/
+	// obriga o usuário a dar um nome ao produto ao instanciar. Evitando assim cadastrar um produto sem nome de
+	// acordo com a minha regra de negócio
 	public Product (String name) {
 		this.name = name;
 	}

@@ -1,5 +1,8 @@
 package application;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -36,6 +39,33 @@ public class ProgramProdutct {
 		System.out.println("You have inform " + quantity + ", printing update Product data: ");
 		p2.addProducts(quantity);
 		System.out.println(p2.toString());
+		
+		Product p3 = new Product("Wristwatch",900.30,10);
+		
+		List <Product> listaDeProduts = new ArrayList<Product>();
+		listaDeProduts.add(p1);
+		listaDeProduts.add(p2);
+		listaDeProduts.add(p3);
+		
+		System.out.println("\nImprimindo o array numa linha");
+		System.out.println(listaDeProduts);
+		
+		System.out.println("\nImprimindo cada item do array por linha");
+		for(int i=0; i < listaDeProduts.size(); i ++) {
+			System.out.println(listaDeProduts.get(i));
+		}
+		
+		System.out.println("\nImprimindo cada item do array por linha usando for Each");
+		for(Product  nickname : listaDeProduts) {
+			System.out.println(nickname);
+		}
+		
+		System.out.println("\nImprimindo cada item do array por linha usando iterator");
+		Iterator it = listaDeProduts.iterator();
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		}
+		
 		
 		sc.close();
 		
