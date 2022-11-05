@@ -42,10 +42,16 @@ public class Triangle {
 	}
 	
 	public double areaTrianglo() {
-		double p = a + c;
-		return Math.sqrt(p*(p-a) * (p - b) * (p-c));
+		double p = this.a +this.b + this.c;
+		return Math.sqrt(p*(p-this.a) * (p - this.b) * (p-this.c));
 	}
-		
+
+	@Override
+	public String toString() {
+		return "Triangle [sideA =" + String.format("%.2f",a) + ", sideB =" + String.format("%.2f",c) + ", sideC =" + String.format("%.2f",b) + ", Triangle Area: " + String.format("%.2f", this.areaTrianglo()) + "]";
+	}
+	
+	
 	
 
 }
