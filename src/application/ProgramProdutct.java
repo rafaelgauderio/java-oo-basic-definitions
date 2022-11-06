@@ -31,7 +31,11 @@ public class ProgramProdutct {
 		Product p2 = new Product("Notebook");
 		//p2.setName("Notebook");
 		p2.setPrice(1900.25);
-		p2.setQuantity(500);
+		//p2.setQuantity(500);
+		System.out.println("\nAo encapsular o parametro quantity. Ele só pode ser alterado pelos\n"
+				+ "métodos add e remove. Assim o usuário não pode setar uma nova quantidade de produto\n"
+				+ "direta no estoque. Proteger a regra de negócio.");
+		p2.addProducts(500);
 		
 		System.out.println("\n\n" + p2 );
 		System.out.println("Enter a quantity of products to be added in stock : ");
@@ -61,7 +65,7 @@ public class ProgramProdutct {
 		}
 		
 		System.out.println("\nImprimindo cada item do array por linha usando iterator");
-		Iterator it = listaDeProduts.iterator();
+		Iterator<Product> it = listaDeProduts.iterator();
 		while(it.hasNext()) {
 			System.out.println(it.next());
 		}

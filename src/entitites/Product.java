@@ -44,9 +44,11 @@ public class Product {
 		return quantity;
 	}
 
+	/*
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
+	*/
 	
 	public double totalValue() {
 		return this.price * this.quantity;
